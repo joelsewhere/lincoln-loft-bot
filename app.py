@@ -2,11 +2,10 @@ import discord
 import os
 from components.helpers import Helpers
 from components.messages import Messages
-from dotenv import load_dotenv
 
 
-load_dotenv()
-TOKEN = os.getenv('DISCORD_TOKEN')
+
+TOKEN = os.environ.get('DISCORD_TOKEN')
 
 class MyClient(discord.Client, Messages, Helpers):
     async def on_ready(self):
