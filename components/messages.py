@@ -11,7 +11,7 @@ class Messages:
         HOUSE = os.environ.get('HOUSE')
         await member.create_dm()                                        
         resources = discord.Embed(title="Here are some roommate resources!", color=0xa25d54)
-        resources.set_thumbnail(url="https://chicagoagentmagazine.com/wp-content/uploads/2012/04/PIN.jpg")
+        resources.set_thumbnail(url="https://raw.githubusercontent.com/joelsewhere/lincoln-loft-bot/main/static/pin.jpg")
         resources.add_field(name="========================\nThe Loft Calendar", value=f"Click **[here]({CALENDAR})**\
                                                             to view the loft calendar\n> We use google calendar to schedule time in the theatre!\
                                                             The calendar can be viewed by everyone. If you'd like to *schedule* events on the calendar,\
